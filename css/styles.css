@@ -1,0 +1,221 @@
+/*Styles for Cats page */
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* Variables */
+
+:root {
+    --green-color: #4EE538;
+    --green-hover-color: rgb(62, 161, 46);
+    --darkgray-color: #464141;
+    /* espaciado */
+    --space20: 20px;
+    --margin-top100: 100px;
+    /* Typografy */
+    --normal: 14px;
+    --line-height: 1.5em;
+    /* Shadows */
+    --box-shadow: 0 0 7px #cac9c9;
+    --text-shadow: 1px 1px 1px #707070;
+}
+
+/* End Variables */
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;   
+    color: #707070;
+}
+
+p {
+    line-height: var(--line-height);
+}
+
+nav {
+    background-color: var(--green-color);
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-right: var(--space20);
+    font-size: 20px;
+    list-style: none;
+}
+
+nav li a {
+    color: var(--darkgray-color);
+    text-decoration: none;
+}
+
+nav li a:hover { 
+    color: white;
+}
+
+/* Main section */
+.main-section {
+    text-align: center;
+}
+
+.main-section h1 {
+    padding: 7% 10% 18% 5%;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.products {
+    background-image: url("../images/curve.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100px;
+    justify-content: center;
+    padding: 5%;
+    display: flex;
+}
+
+.product {
+    padding: 0px 50px;
+    margin-top: -175px;
+    max-width: 190px;
+    }
+
+.content {
+    background-color: white;
+    padding: var(--space20);
+    box-shadow: var(--box-shadow);
+    min-height: 250px;
+    text-align: center;
+}
+
+.content .img-content img {
+    width: 160px;
+}
+
+.img-content {
+    text-align: center;
+    margin-top: -80px;
+}
+
+.main-button {
+    color: white;
+    background-color: var(--green-color);
+    padding: 10px;
+    font-size: var(--normal);
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-shadow: var(--text-shadow);
+}
+
+.main-button:hover {
+    background-color: var(--green-hover-color);
+}   
+
+/* Seccion categories */
+.categories {
+    display: flex;
+    margin-top: 130px;
+    justify-content: center;
+}
+
+.category {
+    max-width: 130px;
+    padding: 0 15px;
+}
+
+.category-content h3 {
+    text-align: center;
+}
+
+.category-content .img-content {
+    height: 125px;
+    
+}
+
+.category-content .img-content img {
+    width: 100px;
+}
+
+.category-content .img-content img:hover {
+    transform: scale(1.3);
+    -webkit-transform:scale(1.3);
+}
+
+/* Section Testimonials */
+.testimonials {
+    margin-top: var(--margin-top100);
+    display: flex;
+    justify-content: center;
+}
+.testimonial {
+    padding: 0 1%;
+}
+.testimonials .content {
+    max-width: 220px;
+}
+
+/* Products  */
+.align-center {
+    align-items: center;
+}
+
+/* ------------------------------------------- Modulos  */
+.modulo {
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    background-color: white;
+}
+
+.modulo-img {
+    text-align: center;
+}
+
+.modulo-img img {
+    max-width: 150px;
+}
+
+/* ---------------------------------------------Forms  */
+.form label {
+    display: block;
+}
+
+.form .input-data {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    height: 35px;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------Success  */
+.background-dark {
+    background-color: #313337;
+}
+
+.succes-content {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #464141;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    margin-top: var(--margin-top100);
+}
+
+
+
